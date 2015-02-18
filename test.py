@@ -10,8 +10,8 @@ import math
 		0.0 0.0 0.0 1.0 0.0
 '''
 
-file = 'armenplzdiejustplz.png'
-output = 'new/armenplzdiejustplz.png'
+file = '1.png'
+output = 'new/1.png'
 
 hue = 188
 
@@ -25,15 +25,15 @@ _ = 0.0
 matrix = {1: ([_, _, _, _, _]), 2: ([_, _, _, _, _]), 3: ([_, _, _, _, _]), 4: ([_, _, _, 1.0, _])}
 
 matrix[1][0] = 0.213 + cos_hue * 0.787 - sin_hue * 0.213
-matrix[1][1] = 0.715 - cos_hue * 0.715 - sin_hue * 0.715 # RED
+matrix[1][1] = 0.715 - cos_hue * 0.715 - sin_hue * 0.715
 matrix[1][2] = 0.072 - cos_hue * 0.072 + sin_hue * 0.928
 
 matrix[2][0] = 0.213 - cos_hue * 0.213 + sin_hue * 0.143
-matrix[2][1] = 0.715 + cos_hue * 0.285 + sin_hue * 0.140 # GREEN
+matrix[2][1] = 0.715 + cos_hue * 0.285 + sin_hue * 0.140 
 matrix[2][2] = 0.072 - cos_hue * 0.072 - sin_hue * 0.283
 
 matrix[3][0] = 0.213 - cos_hue * 0.213 - sin_hue * 0.787
-matrix[3][1] = 0.715 - cos_hue * 0.715 + sin_hue * 0.715 # BLUE
+matrix[3][1] = 0.715 - cos_hue * 0.715 + sin_hue * 0.715
 matrix[3][2] = 0.072 + cos_hue * 0.928 + sin_hue * 0.072
 
 matrix = ' \\\n'.join([' '.join([str(x) for x in m]) for m in matrix.values()])
